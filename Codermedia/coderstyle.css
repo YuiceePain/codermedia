@@ -1,0 +1,107 @@
+body {
+  background: linear-gradient( rgba(179, 255, 0, 0.75), rgba(179, 255, 0, 0.75) ), url(./infectionbackground.png) black repeat center center fixed; 
+}
+
+h1 {
+  color: red;
+}
+
+h2 {
+  color: red;
+}
+
+h3 {
+  color: red;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+  font-size: 60px;
+}
+
+ul {
+  color: red;
+}
+
+li {
+  color: red;
+}
+
+textarea {
+ background: rgb(255,218,0);
+background: linear-gradient(90deg, rgba(255,218,0,1) 4%, rgba(0,189,255,1) 50%, rgba(255,226,0,1) 96%); 
+  color: red;
+}
+
+tr {
+	color: red;
+}
+
+a:hover {
+  background-color: #09ff00;
+}
+
+.active {
+  background-color: rgb(255, 218, 0);
+}
+
+ .sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #09ff00;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: red;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: rgb(54, 190, 36);
+  color: rgb(255, 0, 0);
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: rgb(6, 139, 24);
+  color: rgb(134, 17, 17);
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1250px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.footer {
+  position: fixed;
+  left: 4;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 251, 0, 0.90);
+  color: rgb(0, 0, 0);
+  text-align: left;
+}
